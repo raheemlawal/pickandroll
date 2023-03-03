@@ -2,8 +2,11 @@ import './App.css';
 
 function App() {
 
-  function setPick(){
+  async function setPick(){
     console.log("Pick set")
+    const response = await fetch("http://localhost:8000/setPick")
+    const point = await response.json()
+    console.log(point)
   }
 
   return (
