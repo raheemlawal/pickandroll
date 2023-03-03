@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  function setPick(){
+    console.log("Pick set")
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn how to do a pick and roll!
-        </a>
-      </header>
+      <h1>Pick and Roll.</h1>
+      <label className="col-sm-2 col-form-label">first name:</label>
+      <input className="form-control w-25" type="text"></input>
+      <label className="col-sm-2 col-form-label">last name:</label>
+      <input className="form-control w-25" type="text"></input>
+      <button className="btn btn-primary mt-4" onClick={setPick}>Set Pick</button>
     </div>
   );
 }
