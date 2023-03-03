@@ -10,9 +10,10 @@
 
 ### Built With
 
-...
+- **Frontend: React**
+- **Backend: FastAPI**
 
 ### Authors
 
-  - **Raheem Lawal**
-  - **John Hunter** 
+- **Raheem Lawal**
+- **John Hunter**
